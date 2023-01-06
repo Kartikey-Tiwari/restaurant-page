@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap'); 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Rubik Bubbles', sans-serif;
+    text-align: center;
+}
+
+header, header > div, nav > ul, footer{
+    display: flex;
+}
+
+header {
+    background: lightcyan;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header > div {
+    flex-direction: column;
+    width: fit-content;
+}
+
+nav {
+    width: 80%;
+}
+
+nav > ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+ul li {
+  flex: 1;
+}
+
+ul li a {
+  color: #964B00;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  transition: all 0.1s ease-in;
+  padding: 10px 0px;
+  box-shadow: inset 0px 0px 7px 10px #d7f3e5;
+  background: white;
+}
+
+ul li a:active{
+  transform: scale(0.9);
+}
+
+ul li a.active {
+  background: #b1ffd0;
+}
+
+ul li a:hover {
+  transition: all 0.1s ease-in;
+  transform: translateY(-6px);
+}
+
+header h1{
+    background: linear-gradient(to right,#FF7B54, #FF6E31);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    filter: drop-shadow(2px 4px 0px rgba(0,0,0,0.2));
+}
+
+header span {
+    color: #8d6743;
+    align-self: flex-end;
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.2));
+}
+
+footer {
+  flex-direction: column;
+  background: lightcyan;
+  padding: 15px 0;
+}
+
+@media (max-width: 635px) {
+  header h1 {
+    width: min-content;
+  }
+  nav {
+    width: 100%;
+  }
+}
