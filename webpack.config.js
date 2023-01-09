@@ -1,5 +1,5 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -12,13 +12,17 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
   plugins: [
-      new HtmlWebpackPlugin({
-        template: './src/template.html',
-      }),
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+    }),
   ],
 };

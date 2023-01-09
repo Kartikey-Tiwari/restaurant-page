@@ -1,4 +1,4 @@
-const navBtns = document.querySelectorAll('ul > li > a');
-const mainContent = document.querySelector('main');
+const navBtns = document.querySelectorAll("ul > li > a");
+const mainContent = document.querySelector("main");
 
-export {navBtns, mainContent}
+export { navBtns, mainContent };
