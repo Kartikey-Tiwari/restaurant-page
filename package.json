@@ -1,0 +1,35 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "practice project to get the hang of using webpack",
+  "private": true,
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kartikey-Tiwari/restaurant-page.git"
+  },
+  "keywords": [
+    "javascript",
+    "webpack",
+    "npm"
+  ],
+  "author": "kartikey",
+  "bugs": {
+    "url": "https://github.com/Kartikey-Tiwari/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Kartikey-Tiwari/restaurant-page#readme",
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
