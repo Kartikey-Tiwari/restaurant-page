@@ -1,6 +1,7 @@
 import "./style.css";
 import home from "./home";
 import menu from "./menu";
+import contact from "./contact";
 import { navBtns } from "./nodes";
 
 navBtns[0].classList.add("active");
